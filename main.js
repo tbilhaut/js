@@ -19,7 +19,7 @@ if(innerHeight > 500){
 }
 */
 
-
+/*
 var n = prompt("entrez un nombre");
 var f = 1;
 for(var i=1;i<=n;i++){
@@ -28,5 +28,12 @@ for(var i=1;i<=n;i++){
 }
 alert("le nombre ="+f);
 
- 
+*/
+var MaDiv = document.getElementById("MaDiveNum1");
+
+MaDiv.addEventListener("click", ProceUnedureQuiChangeLetext);
+
+function ProceUnedureQuiChangeLetext(evenement){
+    evenement.target.innerHTML = "On m'a cliqué dessus";
+}
 
